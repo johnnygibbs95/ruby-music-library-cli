@@ -18,10 +18,10 @@ class Genre
     end
 
     def self.destroy_all
-        self.all.clear
+        all.clear
     end
 
-    def self.create(created_genre)
+    def self.create(name)
         new(name).save
     end
 
